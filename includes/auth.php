@@ -27,13 +27,6 @@ class Auth {
         return ['success' => false, 'message' => 'Registration failed.'];
     }
 
-
-class Auth {
-    private $db;
-    
-    public function __construct() {
-        $this->db = getDB(); // Agora a função está disponível
-    }
     
     }
     public function login($username, $password) {
