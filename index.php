@@ -1,7 +1,10 @@
 <?php
+require_once __DIR__ . '/includes/config.php'; // Deve vir primeiro
+require_once __DIR__ . '/includes/auth.php';
 require_once 'includes/config.php';
 require_once 'includes/auth.php';
 require_once 'includes/posts.php';
+
 
 $auth = new Auth();
 $posts = new Posts();
