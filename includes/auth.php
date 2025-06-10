@@ -1,15 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
 
-require_once __DIR__ . '/config.php'; // Adicione esta linha no topo
-
-class Auth {
-    private $db;
-    
-    public function __construct() {
-        $this->db = getDB(); // Agora deve funcionar
-    }
-
 class Auth {
     private $db;
     
