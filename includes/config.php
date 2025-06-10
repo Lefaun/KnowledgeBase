@@ -19,3 +19,20 @@ define('UPLOAD_DIR', __DIR__ . '/../uploads/');
 if (!is_dir(UPLOAD_DIR)) {
     mkdir(UPLOAD_DIR, 0755, true);
 }
+
+function getDB() {
+    static $db = null;
+    
+    if ($db === null) {
+        $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8';
+        try {
+            $db = new PDO($dsn, DB_USER, DB_PASS);
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die('Connection failed: ' . $e->getMessage());
+        }
+    }
+    
+    return $db;
+}
+
