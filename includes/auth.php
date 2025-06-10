@@ -7,8 +7,7 @@ class Auth {
     public function __construct() {
         $this->db = getDB(); // Agora deve funcionar
     }
-    // ... restante do código
-}
+
 require_once 'config.php';
 
 class Auth {
