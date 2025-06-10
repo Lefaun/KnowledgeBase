@@ -26,7 +26,17 @@ class Auth {
         
         return ['success' => false, 'message' => 'Registration failed.'];
     }
+
+require_once __DIR__ . '/config.php'; // Adicione esta linha no topo
+
+class Auth {
+    private $db;
     
+    public function __construct() {
+        $this->db = getDB(); // Agora a função está disponível
+    }
+    
+
     public function login($username, $password) {
         $stmt = $this->db->prepare("SELECT id, username, password FROM users WHERE username = ?");
         $stmt->execute([$username]);
