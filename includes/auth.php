@@ -1,4 +1,14 @@
 <?php
+require_once __DIR__ . '/config.php';
+
+class Auth {
+    private $db;
+    
+    public function __construct() {
+        $this->db = getDB(); // Agora deve funcionar
+    }
+    // ... restante do código
+}
 require_once 'config.php';
 
 class Auth {
