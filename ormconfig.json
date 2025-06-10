@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "url": "postgresql://instasocial_kb_user:4Xg0QGvmHPftrXtNR4J2QroxeQHxU1zH@dpg-d145l7u3jp1c73da5uq0-a/instasocial_kb",
+  "ssl": true,
+  "extra": {
+    "ssl": {
+      "rejectUnauthorized": false
+    }
+  }
+}
