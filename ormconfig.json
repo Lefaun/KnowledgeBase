@@ -1,6 +1,6 @@
 {
   "type": "postgres",
-  "url": "postgresql://instasocial_kb_user:4Xg0QGvmHPftrXtNR4J2QroxeQHxU1zH@dpg-d145l7u3jp1c73da5uq0-a/instasocial_kb",
+  "url": "postgresql://instasocial_kb_user:4Xg0QGvmHPftrXtNR4J2QroxeQHxU1zH@dpg-d145l7u3jp1c73da5uq0-a.oregon-postgres.render.com/instasocial_kb"
   "ssl": true,
   "extra": {
     "ssl": {
