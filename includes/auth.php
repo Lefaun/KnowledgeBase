@@ -28,7 +28,7 @@ class Auth {
     }
 
     
-    }
+    
     public function login($username, $password) {
         $stmt = $this->db->prepare("SELECT id, username, password FROM users WHERE username = ?");
         $stmt->execute([$username]);
