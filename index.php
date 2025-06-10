@@ -5,6 +5,7 @@ require_once 'includes/config.php';
 require_once 'includes/auth.php';
 require_once 'includes/posts.php';
 
+$auth = new Auth(); // Agora não dará erro
 
 $auth = new Auth();
 $posts = new Posts();
