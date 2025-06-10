@@ -10,8 +10,6 @@ class Auth {
         $this->db = getDB(); // Agora deve funcionar
     }
 
-require_once 'config.php';
-
 class Auth {
     private $db;
     
