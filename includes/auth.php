@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/config.php';
 
+require_once __DIR__ . '/config.php'; // Adicione esta linha no topo
+
 class Auth {
     private $db;
     
@@ -36,7 +38,6 @@ class Auth {
         return ['success' => false, 'message' => 'Registration failed.'];
     }
 
-require_once __DIR__ . '/config.php'; // Adicione esta linha no topo
 
 class Auth {
     private $db;
